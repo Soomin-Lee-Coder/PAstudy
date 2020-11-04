@@ -29,7 +29,7 @@ for i in range(1, 100):
                 'star': star,
                 'student':student
             }
-            print(program_info)
+            #무엇인가 써봄
             db.programs.insert_one(program_info)
 
     programs = soup.select('#course > li:nth-child(1) > div > dl > dt')
