@@ -32,7 +32,7 @@ for i in range(1, 100):
             #무엇인가 써봄
             db.programs.insert_one(program_info)
 
-    programs = soup.select('#다시할거야')
+    programs = soup.select('#course > li:nth-child(1) > div > dl > dt')
     for program in programs:
         h_tag = program.select_one('div > a > div > div > div.card-content.horizontal-box > div.card-info.vertical-box > h2')
         if h_tag is not None:
